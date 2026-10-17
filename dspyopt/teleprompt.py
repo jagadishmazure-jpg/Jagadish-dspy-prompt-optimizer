@@ -13,7 +13,7 @@ The loop is always propose -> evaluate -> select:
 
 from __future__ import annotations
 
-from typing import Callable, Dict, List, Tuple
+from typing import Dict, List, Tuple
 
 from .metrics import Metric, evaluate, exact_match
 from .program import Predict

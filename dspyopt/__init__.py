@@ -8,11 +8,11 @@ Inspired by DSPy (Stanford NLP); this is an independent implementation
 for study, not affiliated with the DSPy project.
 """
 
+from .dataset import build_oracle, extract_task, sentiment_task
 from .lm import LM, FakeLM, RealLMAdapter
-from .program import Predict, parse_label, parse_json, DEFAULT_TEMPLATE
-from .metrics import exact_match, contains_all, llm_judge_agreement, evaluate
+from .metrics import contains_all, evaluate, exact_match, llm_judge_agreement
+from .program import DEFAULT_TEMPLATE, Predict, parse_json, parse_label
 from .teleprompt import BootstrapFewShot, InstructionProposer, optimize
-from .dataset import sentiment_task, extract_task, build_oracle
 
 __all__ = [
     "LM",

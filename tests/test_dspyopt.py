@@ -22,7 +22,6 @@ from dspyopt import (
     sentiment_task,
 )
 
-
 # ---------------------------------------------------------------- helpers
 SENT_SEED = "Classify the sentiment. Respond with exactly one of: positive, negative."
 VAGUE_SEED = "Read the ticket and answer."
