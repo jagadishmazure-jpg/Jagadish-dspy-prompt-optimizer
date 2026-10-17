@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dspyopt"
+version = "0.1.0"
+description = "Programmatic prompt optimization in the DSPy spirit: self-improving prompts without hand-tuning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["dspyopt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
